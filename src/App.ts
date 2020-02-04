@@ -35,9 +35,10 @@ class App {
     // placeholder route handler
     router.get('/', (req, res, next) => {
       res.json({
-        message: 'Bonjour monde!'
+        message: 'Bonjour !'
       });
     });
+
 
     this.express.use('/', router);  // routage de base
     this.express.use('/api/v1', sgbRoutes.router);  // tous les URI pour le scénario du système de gestion des bordereau commencent ainsi
